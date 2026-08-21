@@ -1,128 +1,78 @@
 
-```html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Erros na Academia</title>
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #111;
-            color: #eee;
+            background-color: #f5f5f5;
+            color: #333;
         }
 
         header {
-            background: linear-gradient(135deg, #111, #2b2b2b);
+            background-color: white;
             text-align: center;
-            padding: 70px 20px;
-            border-bottom: 4px solid #00ffff;
+            padding: 40px 20px;
+            border-bottom: 1px solid #ddd;
         }
 
         header h1 {
-            font-size: 40px;
-            margin: 0 auto 15px;
-            max-width: 800px;
-        }
-
-        header h1 span {
-            color:#00b7ff;
+            color: #333;
+            margin-bottom: 10px;
         }
 
         header p {
-            color: #ccc;
-            font-size: 18px;
-        }
-
-        .botao {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: #ff6b00;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
+            color: #777;
         }
 
         main {
-            width: 90%;
-            max-width: 1000px;
-            margin: 45px auto;
+            width: 85%;
+            max-width: 900px;
+            margin: 30px auto;
         }
 
         .introducao {
-            text-align: center;
-            margin-bottom: 35px;
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
         }
 
         .introducao h2 {
-            color: #ff6b00;
+            color: #3578a8;
         }
 
-        .introducao p {
-            color: #bbb;
+        .erro {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 18px;
+            border-left: 4px solid #3578a8;
+            border-radius: 4px;
+        }
+
+        .erro h2 {
+            margin-top: 0;
+            color: #3578a8;
+        }
+
+        .erro p {
             line-height: 1.6;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .card {
-            background: #1d1d1d;
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px solid #333;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: #ff6b00;
-        }
-
-        .numero {
-            color: #ff6b00;
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        .card h3 {
-            font-size: 22px;
-            margin: 10px 0;
-        }
-
-        .card p {
-            color: #bbb;
-            line-height: 1.6;
+            color: #555;
         }
 
         footer {
+            background-color: white;
+            border-top: 1px solid #ddd;
             text-align: center;
-            padding: 25px;
-            background: #080808;
-            color: #888;
-            margin-top: 50px;
-        }
-
-        @media (max-width: 700px) {
-            header h1 {
-                font-size: 30px;
-            }
-
-            .cards {
-                grid-template-columns: 1fr;
-            }
+            padding: 20px;
+            color: #777;
         }
     </style>
 </head>
@@ -130,131 +80,117 @@
 <body>
 
 <header>
-    <h1>10 erros que podem estar <span>atrapalhando</span> seus resultados</h1>
-    <p>Você treina, mas sente que não está evoluindo? Talvez alguns hábitos estejam atrapalhando.</p>
-
-    <a href="#erros" class="botao">Ver os erros</a>
+    <h1>10 erros que podem estar atrapalhando seus resultados</h1>
+    <p>Alguns hábitos simples podem fazer diferença na sua evolução.</p>
 </header>
 
 <main>
 
     <div class="introducao">
-        <h2>Será que você está cometendo algum deles?</h2>
+        <h2>Por que os resultados podem estar demorando?</h2>
+
         <p>
-            Ter resultado na academia não depende apenas de treinar pesado.
-            Descanso, alimentação, técnica e principalmente constância também
-            fazem parte do processo.
+            Muitas pessoas começam a frequentar a academia pensando que basta
+            treinar bastante para conseguir resultados. Porém, existem vários
+            outros fatores que também fazem diferença. Veja abaixo alguns dos
+            erros mais comuns e que podem estar atrapalhando sua evolução.
         </p>
     </div>
 
-    <div class="cards" id="erros">
+    <div class="erro">
+        <h2>1. Não ter um objetivo</h2>
+        <p>
+            Treinar sem saber o que você realmente quer alcançar pode dificultar
+            sua evolução. É importante ter uma meta, como ganhar massa muscular,
+            perder gordura ou melhorar o condicionamento físico.
+        </p>
+    </div>
 
-        <div class="card">
-            <div class="numero">ERRO 01</div>
-            <h3>Não ter um objetivo</h3>
-            <p>
-                Treinar sem saber o que você quer alcançar pode dificultar sua evolução.
-                Definir se o objetivo é ganhar massa, perder gordura ou melhorar o
-                condicionamento ajuda a organizar melhor os treinos.
-            </p>
-        </div>
+    <div class="erro">
+        <h2>2. Usar peso demais</h2>
+        <p>
+            Colocar muito peso pode fazer com que o exercício seja executado de
+            forma errada. Uma carga adequada permite controlar melhor o movimento
+            e trabalhar o músculo de maneira mais eficiente.
+        </p>
+    </div>
 
-        <div class="card">
-            <div class="numero">ERRO 02</div>
-            <h3>Usar peso demais</h3>
-            <p>
-                Colocar uma carga muito pesada pode fazer você perder a técnica
-                do exercício. O mais importante é conseguir controlar o movimento
-                e realizar o exercício corretamente.
-            </p>
-        </div>
+    <div class="erro">
+        <h2>3. Fazer os exercícios de forma errada</h2>
+        <p>
+            A execução correta é muito importante. Fazer os movimentos rapidamente
+            ou com uma postura errada pode diminuir a qualidade do exercício e
+            ainda aumentar o risco de lesões.
+        </p>
+    </div>
 
-        <div class="card">
-            <div class="numero">ERRO 03</div>
-            <h3>Executar o exercício errado</h3>
-            <p>
-                Fazer os movimentos de qualquer maneira pode diminuir o trabalho
-                do músculo e aumentar o risco de lesões. A execução correta deve
-                ser uma prioridade durante o treino.
-            </p>
-        </div>
+    <div class="erro">
+        <h2>4. Não descansar o suficiente</h2>
+        <p>
+            O descanso também faz parte do treino. O corpo precisa de tempo para
+            se recuperar depois dos exercícios. Dormir bem e respeitar os dias de
+            descanso ajuda na recuperação.
+        </p>
+    </div>
 
-        <div class="card">
-            <div class="numero">ERRO 04</div>
-            <h3>Não descansar</h3>
-            <p>
-                O corpo precisa de tempo para se recuperar depois do treino.
-                Dormir bem e respeitar os períodos de descanso são importantes
-                para manter um bom desempenho.
-            </p>
-        </div>
+    <div class="erro">
+        <h2>5. Não cuidar da alimentação</h2>
+        <p>
+            A alimentação tem bastante importância para quem treina. Não consumir
+            uma quantidade adequada de nutrientes pode dificultar o ganho de massa
+            muscular, a recuperação e o desempenho.
+        </p>
+    </div>
 
-        <div class="card">
-            <div class="numero">ERRO 05</div>
-            <h3>Descuidar da alimentação</h3>
-            <p>
-                Treinar bastante e não cuidar da alimentação pode dificultar
-                seus objetivos. Uma alimentação equilibrada ajuda a fornecer
-                energia e nutrientes para o corpo.
-            </p>
-        </div>
+    <div class="erro">
+        <h2>6. Trocar de treino toda hora</h2>
+        <p>
+            Existem muitos treinos diferentes na internet, mas ficar mudando de
+            rotina constantemente pode dificultar o acompanhamento dos resultados.
+            A constância é importante para perceber a evolução.
+        </p>
+    </div>
 
-        <div class="card">
-            <div class="numero">ERRO 06</div>
-            <h3>Mudar de treino toda hora</h3>
-            <p>
-                Ficar trocando de treino constantemente dificulta acompanhar
-                a evolução. Ter uma rotina e aumentar a dificuldade aos poucos
-                pode ser mais eficiente.
-            </p>
-        </div>
+    <div class="erro">
+        <h2>7. Não fazer aquecimento</h2>
+        <p>
+            Começar diretamente com exercícios pesados pode não ser uma boa escolha.
+            O aquecimento ajuda a preparar o corpo para o treino e deve fazer parte
+            de uma rotina bem organizada.
+        </p>
+    </div>
 
-        <div class="card">
-            <div class="numero">ERRO 07</div>
-            <h3>Não fazer aquecimento</h3>
-            <p>
-                Começar diretamente com exercícios pesados não é recomendado.
-                Um aquecimento adequado prepara o corpo para a atividade e
-                ajuda você a começar o treino melhor.
-            </p>
-        </div>
+    <div class="erro">
+        <h2>8. Ficar muito tempo no celular</h2>
+        <p>
+            Mexer no celular entre as séries pode tirar a concentração e aumentar
+            bastante o tempo do treino. Usar o celular para controlar o treino é
+            uma coisa, mas ficar muito tempo nas redes sociais pode atrapalhar.
+        </p>
+    </div>
 
-        <div class="card">
-            <div class="numero">ERRO 08</div>
-            <h3>Ficar muito no celular</h3>
-            <p>
-                O celular pode acabar tirando sua concentração. Passar muito
-                tempo nas redes sociais entre as séries pode deixar o treino
-                mais demorado e atrapalhar seu foco.
-            </p>
-        </div>
+    <div class="erro">
+        <h2>9. Se comparar com outras pessoas</h2>
+        <p>
+            Cada pessoa tem um corpo, uma rotina e um ritmo diferente. Comparar
+            seus resultados com os de outra pessoa pode acabar causando frustração.
+            O mais importante é acompanhar sua própria evolução.
+        </p>
+    </div>
 
-        <div class="card">
-            <div class="numero">ERRO 09</div>
-            <h3>Se comparar com outras pessoas</h3>
-            <p>
-                Cada pessoa possui um corpo e uma rotina diferente. Comparar
-                seus resultados com os de outras pessoas pode gerar frustração.
-                O ideal é acompanhar sua própria evolução.
-            </p>
-        </div>
-
-        <div class="card">
-            <div class="numero">ERRO 10</div>
-            <h3>Querer resultados rápidos</h3>
-            <p>
-                Os resultados não aparecem do dia para a noite. É preciso
-                paciência, treino regular, alimentação adequada e descanso
-                para conseguir uma evolução consistente.
-            </p>
-        </div>
-
+    <div class="erro">
+        <h2>10. Querer resultados muito rápidos</h2>
+        <p>
+            Os resultados não aparecem de um dia para o outro. É necessário ter
+            paciência e manter uma rotina de treinos, alimentação e descanso.
+            A constância é uma das partes mais importantes para evoluir.
+        </p>
     </div>
 
 </main>
 
 <footer>
-    <p>Blog de Academia • Treino, foco e constância</p>
+    <p>Blog sobre academia e resultados</p>
 </footer>
 
 </body>
